@@ -17,7 +17,8 @@ spec:
         app: fastapi
     spec:
       containers:
-        - image: ykadi/datascientestapi:v.168.0
+        - image: ykadi/fastapi:v1.0
+          imagePullPolicy: IfNotPresent
           name: fastapi
           ports:
             - containerPort: 5000
