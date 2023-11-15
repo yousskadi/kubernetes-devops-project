@@ -1,0 +1,16 @@
+# kubernetes resources to be managed by kustomize
+resources:
+- clusterissuer.yaml
+- db-service.yaml
+- db-statefulset.yaml
+- fastapi-service.yaml
+- fastapi-deployment.yaml
+- pgadmin-service.yaml
+- pgadmin-deployment.yaml
+- secret-db.yaml
+- postgres-data-persistentvolumeclaim.yaml
+- hpa-fastapi.yaml
+- ingress-api.yaml
+#Customizations that need to be made
+commonLabels:
+  company: Devops-ykadi
