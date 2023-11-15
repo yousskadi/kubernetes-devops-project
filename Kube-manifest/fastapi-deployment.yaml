@@ -17,7 +17,7 @@ spec:
         app: fastapi
     spec:
       containers:
-        - image: ykadi/fastapi:v1.0
+        - image: ykadi/fastapi:v2.0
           imagePullPolicy: IfNotPresent
           name: fastapi
           ports:

@@ -7,4 +7,7 @@ namespace: default
 
 image:
   name: ykadi/fastapi
-  tag: v.1.0
+  tag: v2.0
+
+
+hostIngress: api.devops-youss.cloudns.ph 

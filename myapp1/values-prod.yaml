@@ -4,3 +4,6 @@ fastapiName: fastapi-prod
 
 namespace: prod
 
+hpa:
+   maxReplicas: 6
+   minReplicas: 3

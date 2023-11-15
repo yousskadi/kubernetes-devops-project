@@ -4,3 +4,6 @@ fastapiName: fastapi-dev
 
 namespace: dev
 
+hpa:
+   maxReplicas: 3
+   minReplicas: 1
