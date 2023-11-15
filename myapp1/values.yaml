@@ -2,10 +2,9 @@ appName: pgadmin-default
 
 fastapiName: fastapi
 
-fastapiNodeport: fastapinodeport
 
 namespace: default
 
 image:
-  name: ykadi/datascientestapi
-  tag: v.5.0
+  name: ykadi/fastapi
+  tag: v.1.0
