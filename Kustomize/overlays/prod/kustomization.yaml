@@ -1,0 +1,7 @@
+resources:
+  - ../../resources
+  - hpa-fastapi.yaml
+
+
+nameSuffix: -prod
+namespace: prod

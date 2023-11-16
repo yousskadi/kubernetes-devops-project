@@ -9,8 +9,13 @@ resources:
 - pgadmin-deployment.yaml
 - secret-db.yaml
 - postgres-data-persistentvolumeclaim.yaml
-- hpa-fastapi.yaml
 - ingress-api.yaml
 #Customizations that need to be made
+
+namespace: kustomize
+
 commonLabels:
   company: Devops-ykadi
+
+commonAnnotations: 
+      exam: devops-kubernetes-youss

@@ -1,0 +1,5 @@
+resources:
+  - ../../resources
+
+nameSuffix: -staging
+namespace: staging
