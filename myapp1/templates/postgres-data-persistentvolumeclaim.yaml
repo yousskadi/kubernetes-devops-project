@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   labels:
     app: postgres-data
-  name: postgres-data
+  name: postgres-data-helm
   namespace: {{ .Values.namespace }}
 spec:
   accessModes:
