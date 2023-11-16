@@ -4,7 +4,7 @@ metadata:
   labels:
     app: postgres-data
   name: postgres-data
-  namespace: default
+  namespace: standard
 spec:
   accessModes:
     - ReadWriteOnce

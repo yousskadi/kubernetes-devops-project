@@ -3,7 +3,7 @@ appName: pgadmin-default
 fastapiName: fastapi
 
 
-namespace: default
+namespace: helm
 
 image:
   name: ykadi/fastapi
