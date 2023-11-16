@@ -4,7 +4,7 @@ metadata:
   labels:
     app: fastapi
   name: fastapi
-  namespace: default
+  namespace: standard
 spec:
   ports:
     - name: "5000"
