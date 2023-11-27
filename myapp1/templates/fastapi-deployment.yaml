@@ -6,7 +6,7 @@ metadata:
   name: {{ .Values.fastapiName }}
   namespace: {{ .Values.namespace }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCountAPI }}
   selector:
     matchLabels:
       app: {{ .Values.fastapiName }}
@@ -20,7 +20,7 @@ spec:
         - image: "{{ .Values.image.name }}:{{ .Values.image.tag }}" 
           name: {{ .Values.fastapiName }}
           ports:
-            - containerPort: 5000
+            - containerPort: {{ .Values.ApiPort }}
               protocol: TCP
           resources: {}
       restartPolicy: Always
