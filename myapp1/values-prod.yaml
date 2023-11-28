@@ -12,7 +12,7 @@ replicaCountDB: 2
 
 # PGadmin Values
 appName: pgadmin-prod
-
+replicaCountPGadmin: 2
 
 # HPA values
 hpa:

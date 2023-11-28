@@ -10,6 +10,7 @@ resources:
 - secret-db.yaml
 - postgres-data-persistentvolumeclaim.yaml
 - ingress-api.yaml
+- ingress-pgadmin.yaml
 #Customizations that need to be made
 
 namespace: kustomize
