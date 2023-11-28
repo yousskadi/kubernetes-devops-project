@@ -36,14 +36,14 @@ servicedbPort: 5432
 
 
 secretDbName: postgresql-fastapi-userpass
-
+configMapPostgres: db-config
 
 ### PGadmin Values ####
 
 appName: pgadmin-helm
 replicaCountPGadmin: 1
 
-
+configMapPgadmin: pgadmin-conf 
 
 #### HPA values ####
 

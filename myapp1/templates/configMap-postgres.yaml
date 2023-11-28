@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: db-config
+  name: {{ .Values.configMapPostgres }}
   namespace: {{ .Values.namespace }}
 data:
   POSTGRES_DB: storedb
