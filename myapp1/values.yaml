@@ -48,6 +48,9 @@ hpa:
 
 # Ingress values
 
+
+
 ingressClassName: traefik
 
 hostIngress: api.devops-youss.cloudns.ph 
+hostIngress2: pgad.devops-youss.cloudns.ph
