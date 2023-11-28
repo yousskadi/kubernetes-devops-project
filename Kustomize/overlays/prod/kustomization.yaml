@@ -3,5 +3,5 @@ resources:
   - hpa-fastapi.yaml
 
 
-nameSuffix: -prod
+#nameSuffix: -prod
 namespace: prod

@@ -1,6 +1,6 @@
 # kubernetes resources to be managed by kustomize
 resources:
-- clusterissuer.yaml
+#- clusterissuer.yaml
 - db-service.yaml
 - db-statefulset.yaml
 - fastapi-service.yaml
