@@ -8,7 +8,8 @@ replicaCountAPI: 1
 ## Postgresql values
 
 replicaCountDB: 2
-
+volumeDB:
+    storage: 10Gi
 
 # PGadmin Values
 appName: pgadmin-prod

@@ -26,8 +26,8 @@ replicaCountDB: 1
 
 volumeDB:
     name: postgres-data
-    accessModes:
-    storage: 10Gi
+    accessModes: ReadWriteOnce
+    storage: 500Mi
     mountPath: /var/lib/postgresql/data
 
 pvcPostgres: postgres-pvc

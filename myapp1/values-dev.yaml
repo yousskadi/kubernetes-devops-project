@@ -10,6 +10,12 @@ replicaCountAPI: 1
 
 replicaCountDB: 1
 
+volumeDB:
+    storage: 1Gi
+   
+
+
+
 # PGadmin Values
 appName: pgadmin-dev
 
