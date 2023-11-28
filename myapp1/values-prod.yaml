@@ -1,9 +1,20 @@
-appName: pgadmin-prod
-
-fastapiName: fastapi-prod
 
 namespace: prod
 
+# Fastapi Values
+fastapiName: fastapi-prod
+replicaCountAPI: 1
+
+## Postgresql values
+
+replicaCountDB: 2
+
+
+# PGadmin Values
+appName: pgadmin-prod
+
+
+# HPA values
 hpa:
    maxReplicas: 6
    minReplicas: 3
