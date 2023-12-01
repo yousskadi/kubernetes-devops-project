@@ -11,6 +11,9 @@ resources:
 - postgres-data-persistentvolumeclaim.yaml
 - ingress-api.yaml
 - ingress-pgadmin.yaml
+- configMap-pgadmin.yaml
+- configMap-postgres.yaml
+
 #Customizations that need to be made
 
 namespace: kustomize

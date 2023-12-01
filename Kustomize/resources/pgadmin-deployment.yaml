@@ -16,11 +16,9 @@ spec:
         app: pgadmin
     spec:
       containers:
-        - env:
-            - name: PGADMIN_DEFAULT_EMAIL
-              value: admin@admin.com
-            - name: PGADMIN_DEFAULT_PASSWORD
-              value: root
+        - envFrom:
+              - configMapRef:
+                  name: pgadmin-conf 
           image: dpage/pgadmin4
           name: pgadmin
           ports:
