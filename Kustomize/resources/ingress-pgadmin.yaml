@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-pgadmin
+  namespace: standard
+  generation: 2
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    #nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+   - hosts:
+     - pgad.devops-youss.cloudns.ph
+     secretName: letsencrypt-prod
+  ingressClassName: traefik
+  rules:
+  - host: pgad.devops-youss.cloudns.ph
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: pgadmin
+            port:
+              number: 8080

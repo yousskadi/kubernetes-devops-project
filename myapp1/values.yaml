@@ -1,9 +1,6 @@
 namespace: helm
 
-appName: pgadmin-default
-
-
-# fastapi Values
+#### fastapi Values ####
 
 fastapiName: fastapi
 replicaCountAPI: 1
@@ -18,7 +15,8 @@ ApiPort: 5000
 serviceApiPort: 5000
 
 
-## Postgresql values
+#### Postgresql values ####
+
 DatabaseName: db
 DatabaseLabel: db
 
@@ -38,16 +36,25 @@ servicedbPort: 5432
 
 
 secretDbName: postgresql-fastapi-userpass
+configMapPostgres: db-config
 
+### PGadmin Values ####
 
-# HPA values
+appName: pgadmin-helm
+replicaCountPGadmin: 1
+
+configMapPgadmin: pgadmin-conf 
+
+#### HPA values ####
+
 hpa:
    maxReplicas: 2
    minReplicas: 1
 
 
-# Ingress values
+#### Ingress values ####
 
+clusterIssuerNameProd: letsencrypt-prod 
 
 
 ingressClassName: traefik
