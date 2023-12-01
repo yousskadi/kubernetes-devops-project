@@ -1,5 +1,19 @@
-appName: pgadmin-staging
-
-fastapiName: fastapi-staging
-
 namespace: staging
+
+# Fastapi Values
+fastapiName: fastapi-staging
+replicaCountAPI: 1
+
+## Postgresql values
+
+replicaCountDB: 2
+
+
+# PGadmin Values
+appName: pgadmin-staging
+replicaCountPGadmin: 2
+
+# HPA values
+hpa:
+   maxReplicas: 6
+   minReplicas: 3

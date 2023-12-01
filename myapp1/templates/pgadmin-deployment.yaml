@@ -16,11 +16,6 @@ spec:
         app: {{ .Values.appName}}
     spec:
       containers:
-        # - env:
-        #     - name: PGADMIN_DEFAULT_EMAIL
-        #       value: admin@admin.com
-        #     - name: PGADMIN_DEFAULT_PASSWORD
-        #       value: root
         - envFrom:
             - configMapRef:
                 name: pgadmin-conf
